@@ -10,7 +10,7 @@ interface AlgListItemProps {
 const AlgListItem: FC<AlgListItemProps> = ({ id, alg, hasVideo }) => {
   return (
     <div className={styles.AlgListItem}>
-      <div className={styles.Img}>{id}</div>
+      <img src={`assets/img/${id}.gif`} alt={id} />
       <div className={styles.Alg}>{alg}</div>
     </div>
   );
