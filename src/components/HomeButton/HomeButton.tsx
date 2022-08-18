@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import { useNavigate } from "react-router-dom";
-import styles from "./HomeButton.module.scss";
+import React, { FC } from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from './HomeButton.module.scss';
 
 interface HomeButtonProps {
   caption: string;

@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import styles from "./AlgListItem.module.scss";
+import React, { FC } from 'react';
+import styles from './AlgListItem.module.scss';
 
 interface AlgListItemProps {
   id: string;

@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import { Alg } from "../../../algs";
-import AlgList from "../../AlgList/AlgList";
-import styles from "./AlgsPage.module.scss";
+import React, { FC } from 'react';
+import { Alg } from '../../../algs';
+import AlgList from '../../AlgList/AlgList';
+import styles from './AlgsPage.module.scss';
 
 interface AlgsPageProps {
   title: string;

@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import HomeButton from "../../HomeButton/HomeButton";
-import styles from "./Home.module.scss";
+import React, { FC } from 'react';
+import HomeButton from '../../HomeButton/HomeButton';
+import styles from './Home.module.scss';
 
 interface HomeProps {}
 

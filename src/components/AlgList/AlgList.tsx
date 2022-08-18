@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import { Alg } from "../../algs";
-import AlgListItem from "../AlgListItem/AlgListItem";
-import styles from "./AlgList.module.scss";
+import React, { FC } from 'react';
+import { Alg } from '../../algs';
+import AlgListItem from '../AlgListItem/AlgListItem';
+import styles from './AlgList.module.scss';
 
 interface AlgListProps {
   algs: Alg[];
