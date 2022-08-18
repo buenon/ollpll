@@ -9,17 +9,11 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/oll"
-          element={<AlgsPage title="OLL" algs={AlgsDB.oll} />}
-        />
-        <Route
-          path="/pll"
-          element={<AlgsPage title="PLL" algs={AlgsDB.pll} hasVideo={true} />}
-        />
+        <Route path="/oll" element={<AlgsPage title="OLL" algs={AlgsDB.oll} />} />
+        <Route path="/pll" element={<AlgsPage title="PLL" algs={AlgsDB.pll} hasVideo={true} />} />
         <Route path="/video/:id" element={<VideoPage />} />
       </Routes>
     </BrowserRouter>

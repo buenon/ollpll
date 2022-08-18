@@ -21,7 +21,7 @@ const VideoPage: FC<VideoPageProps> = () => {
 
   return (
     <div className={styles.VideoPage} onClick={handleClick}>
-      <ReactPlayer ref={ref} url={`/assets/video/${params.id}.mp4`} playing={true} />
+      <ReactPlayer ref={ref} url={`${import.meta.env.BASE_URL}/assets/video/${params.id}.mp4`} playing={true} />
     </div>
   );
 };

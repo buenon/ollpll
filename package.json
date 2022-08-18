@@ -1,12 +1,26 @@
 {
-  "name": "oll-pll",
-  "private": true,
-  "version": "0.0.0",
+  "name": "ollpll",
+  "displayName": "OLL/PLL Reminder",
+  "description": "Simple OLL/PLL algorithms reminder",
+  "version": "0.0.1",
+  "publisher": "buenon",
+  "author": {
+    "name": "Nadav Bueno",
+    "email": "buenonadav@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://buenon.github.io/ollpll",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buenon/ollpll"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "prettier": "^2.7.1",
@@ -22,6 +36,7 @@
     "@vitejs/plugin-react": "^2.0.1",
     "eslint": "^8.22.0",
     "eslint-config-react-app": "^7.0.1",
+    "gh-pages": "^4.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.7"
   }
