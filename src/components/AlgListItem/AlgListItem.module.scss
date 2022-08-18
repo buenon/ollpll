@@ -6,6 +6,12 @@
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.HasVideo {
+  cursor: pointer;
 }
 
 .Alg {
