@@ -1,9 +1,33 @@
 .VideoPage {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  width: 100%;
 
-  > div {
-    height: 100% !important;
-    width: 100% !important;
+  > div:first-child {
+    width: initial !important;
+    height: initial !important;
+    max-height: 100%;
+  }
+}
+
+.ButtonsContainer {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  > button {
+    flex: 1;
+  }
+}
+
+@media (orientation: landscape) {
+  .VideoPage {
+    flex-direction: row;
+  }
+
+  .ButtonsContainer {
+    flex-direction: column;
+    flex: 1;
   }
 }
