@@ -6,14 +6,13 @@ import styles from './AlgsPage.module.scss';
 interface AlgsPageProps {
   title: string;
   algs: Alg[];
-  hasVideo?: boolean;
 }
 
-const AlgsPage: FC<AlgsPageProps> = ({ title, algs, hasVideo }) => {
+const AlgsPage: FC<AlgsPageProps> = ({ title, algs }) => {
   return (
     <div className={styles.AlgsPage}>
       <div className={styles.Title}>{title}</div>
-      <AlgList algs={algs} hasVideo={hasVideo} />
+      <AlgList algs={algs} />
     </div>
   );
 };

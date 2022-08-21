@@ -12,6 +12,7 @@
 
 .ButtonsContainer {
   display: flex;
+  flex: 1;
   padding: 1rem;
   gap: 1rem;
   box-sizing: border-box;
@@ -19,6 +20,12 @@
   > button {
     flex: 1;
   }
+}
+
+.ControlsContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 @media (orientation: landscape) {
@@ -29,5 +36,11 @@
   .ButtonsContainer {
     flex-direction: column;
     flex: 1;
+  }
+}
+
+@media (orientation: portrait) {
+  .ControlsContainer {
+    flex: initial;
   }
 }

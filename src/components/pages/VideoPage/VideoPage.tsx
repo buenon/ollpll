@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 import styles from './VideoPage.module.scss';
 import Button from '../../HomeButton/Button';
 import { useNavigate } from 'react-router-dom';
+import { AlgsDB } from '../../../algs';
 
 interface VideoPageProps {}
 
@@ -32,9 +33,12 @@ const VideoPage: FC<VideoPageProps> = () => {
         playbackRate={isSlow ? 0.5 : 1}
         volume={0}
       />
-      <div className={styles.ButtonsContainer}>
-        <Button onClick={() => setIsSlow(!isSlow)}>{isSlow ? 'x1.0' : 'x0.5'}</Button>
-        <Button onClick={() => navigate(-1)}>Back</Button>
+      <div className={styles.ControlsContainer}>
+        <div>{AlgsDB.alg(params.id || '')?.alg}</div>
+        <div className={styles.ButtonsContainer}>
+          <Button onClick={() => setIsSlow(!isSlow)}>{isSlow ? 'x1.0' : 'x0.5'}</Button>
+          <Button onClick={() => navigate(-1)}>Back</Button>
+        </div>
       </div>
     </div>
   );

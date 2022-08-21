@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/oll" element={<AlgsPage title="OLL" algs={AlgsDB.oll} />} />
-        <Route path="/pll" element={<AlgsPage title="PLL" algs={AlgsDB.pll} hasVideo={true} />} />
+        <Route path="/pll" element={<AlgsPage title="PLL" algs={AlgsDB.pll} />} />
         <Route path="/video/:id" element={<VideoPage />} />
       </Routes>
     </BrowserRouter>
